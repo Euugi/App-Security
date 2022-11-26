@@ -1,0 +1,698 @@
+patryk@Latitude:~/Desktop/AppSecurity/InsecureCommunicationServerClient$ horusec start -p .
+WARN[0000] {HORUSEC_CLI} Config file not found          
+WARN[0000] {HORUSEC_CLI} When starting the analysis WE SKIP A TOTAL OF 61 FILES that are not considered to be analyzed. To see more details use flag --log-level=debug 
+
+WARN[0000] Horusec will return a timeout after 600 seconds. This time can be customized in the cli settings. 
+
+WARN[0000] {HORUSEC_CLI} PLEASE DON'T REMOVE ".horusec" FOLDER BEFORE THE ANALYSIS FINISH! Don’t worry, we’ll remove it after the analysis ends automatically! Project sent to folder in location: [/home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/.horusec/b29b5714-2500-4035-9161-f41e9cf9e5ab] 
+
+
+
+==================================================================================
+
+HORUSEC ENDED THE ANALYSIS WITH STATUS OF "success" AND WITH THE FOLLOWING RESULTS:
+
+==================================================================================
+
+Analysis StartedAt: 2022-11-26 19:01:53
+Analysis FinishedAt: 2022-11-26 19:02:04
+
+==================================================================================
+
+Language: Java
+Severity: CRITICAL
+Line: 15
+Column: 23
+SecurityTool: HorusecEngine
+Confidence: MEDIUM
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/res/layout/activity_main.xml
+Code: android:text="10.0.2.2" />
+RuleID: HS-JAVA-152
+Type: Vulnerability
+ReferenceHash: 9589106879c63897095de32644d6a47029fdfd864be97df81ecb9cdf6bf77d95
+Details: (1/2) * Possible vulnerability detected: Spring Framework Remote Code Execution
+It has been identified that versions prior to < 5.3.18 or < 5.2.20 of the spring framework are vulnerable to remote code execution. Please upgrade to version >= 5.3.18 or >= 5.2.20. For more information checkout the CVE-2022-22965 (https://tanzu.vmware.com/security/cve-2022-22965) advisory.
+         
+(2/2) * Possible vulnerability detected: Remote code injection Apache Log4j
+Log4j versions prior to 2.17.1 are subject to a remote code execution vulnerability via the ldap JNDI parser, uncontrolled recursion from self-referential lookups and some other vulnerabilities. For more information checkout the CVE-2021-44228 (https://nvd.nist.gov/vuln/detail/CVE-2021-44228), CVE-2021-45046 (https://nvd.nist.gov/vuln/detail/CVE-2021-45046), CVE-2021-45105 (https://nvd.nist.gov/vuln/detail/CVE-2021-45105) and CVE-2021-44832 (https://nvd.nist.gov/vuln/detail/CVE-2021-44832) advisories.
+
+==================================================================================
+
+Language: Leaks
+Severity: CRITICAL
+Line: 0
+Column: 0
+SecurityTool: HorusecEngine
+Confidence: MEDIUM
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/report.sarif
+Code: 
+RuleID: HS-LEAKS-25
+Type: Vulnerability
+ReferenceHash: c1127ac68678424f97c2306c1ece5cd0053ffb11e7d433dfd207cd8471595a9d
+Details: (1/1) * Possible vulnerability detected: Potential Hard-coded credential
+The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. For more information checkout the CWE-798 (https://cwe.mitre.org/data/definitions/798.html) advisory.
+
+==================================================================================
+
+Language: Leaks
+Severity: CRITICAL
+Line: 0
+Column: 0
+SecurityTool: HorusecEngine
+Confidence: MEDIUM
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/report.sarif
+Code: 
+RuleID: HS-LEAKS-25
+Type: Vulnerability
+ReferenceHash: c1127ac68678424f97c2306c1ece5cd0053ffb11e7d433dfd207cd8471595a9d
+Details: (1/1) * Possible vulnerability detected: Potential Hard-coded credential
+The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. For more information checkout the CWE-798 (https://cwe.mitre.org/data/definitions/798.html) advisory.
+
+==================================================================================
+
+Language: Leaks
+Severity: CRITICAL
+Line: 0
+Column: 0
+SecurityTool: HorusecEngine
+Confidence: MEDIUM
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/report.sarif
+Code: 
+RuleID: HS-LEAKS-25
+Type: Vulnerability
+ReferenceHash: c1127ac68678424f97c2306c1ece5cd0053ffb11e7d433dfd207cd8471595a9d
+Details: (1/1) * Possible vulnerability detected: Potential Hard-coded credential
+The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. For more information checkout the CWE-798 (https://cwe.mitre.org/data/definitions/798.html) advisory.
+
+==================================================================================
+
+Language: Leaks
+Severity: CRITICAL
+Line: 0
+Column: 0
+SecurityTool: HorusecEngine
+Confidence: MEDIUM
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/report.sarif
+Code: 
+RuleID: HS-LEAKS-25
+Type: Vulnerability
+ReferenceHash: c1127ac68678424f97c2306c1ece5cd0053ffb11e7d433dfd207cd8471595a9d
+Details: (1/1) * Possible vulnerability detected: Potential Hard-coded credential
+The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. For more information checkout the CWE-798 (https://cwe.mitre.org/data/definitions/798.html) advisory.
+
+==================================================================================
+
+Language: Leaks
+Severity: CRITICAL
+Line: 48
+Column: 44
+SecurityTool: HorusecEngine
+Confidence: MEDIUM
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: private static final char[] TRUST_STORE_PWD = "abc123".toCharArray();
+RuleID: HS-LEAKS-26
+Type: Vulnerability
+ReferenceHash: aed6564752a3c793d5f181a4b30bff08340efa69f94fdb5662a874e5182fa258
+Details: (1/1) * Possible vulnerability detected: Hard-coded password
+The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. For more information checkout the CWE-798 (https://cwe.mitre.org/data/definitions/798.html) advisory.
+
+==================================================================================
+
+Language: Leaks
+Severity: CRITICAL
+Line: 51
+Column: 42
+SecurityTool: HorusecEngine
+Confidence: MEDIUM
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: private static final char[] KEY_STORE_PWD = "abc123".toCharArray();
+RuleID: HS-LEAKS-26
+Type: Vulnerability
+ReferenceHash: d7f156cfab65d9ba69e273c52a39943cb42106895f4c7d50132a9b69eeed7cda
+Details: (1/1) * Possible vulnerability detected: Hard-coded password
+The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. For more information checkout the CWE-798 (https://cwe.mitre.org/data/definitions/798.html) advisory.
+
+==================================================================================
+
+Language: Leaks
+Severity: CRITICAL
+Line: 540
+Column: 2355
+SecurityTool: HorusecEngine
+Confidence: MEDIUM
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/.checkmate/db.sqlite
+Code: APIKey", "file": "app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java"
+RuleID: HS-LEAKS-25
+Type: Vulnerability
+ReferenceHash: 4a14525a0896e13eda8b284382cd927ab4ca06c383e9abb5aaec53ed370a895f
+Details: (1/1) * Possible vulnerability detected: Potential Hard-coded credential
+The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. For more information checkout the CWE-798 (https://cwe.mitre.org/data/definitions/798.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: HIGH
+Line: 61
+Column: 10
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/TLSClient.java
+Code: } catch (Exception e) {
+RuleID: HS-JAVA-63
+Type: Vulnerability
+ReferenceHash: bf641f60d3e100508fbf2b1de5229dbe3cabece911e8ce5703f4d6cb06b570ce
+Details: (1/1) * Possible vulnerability detected: Information Exposure Through An Error Message
+The sensitive information may be valuable information on its own (such as a password), or it may be useful for launching other, more deadly attacks. For more information checkout the CWE-209 (https://cwe.mitre.org/data/definitions/209.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: HIGH
+Line: 40
+Column: 10
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: } catch (Exception ignored) {
+RuleID: HS-JAVA-63
+Type: Vulnerability
+ReferenceHash: 61a5d0a7c8d57af65fd62c0c3a2973d45e74451e2ef1c02020e0dedccfa90c3e
+Details: (1/1) * Possible vulnerability detected: Information Exposure Through An Error Message
+The sensitive information may be valuable information on its own (such as a password), or it may be useful for launching other, more deadly attacks. For more information checkout the CWE-209 (https://cwe.mitre.org/data/definitions/209.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: HIGH
+Line: 64
+Column: 24
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
+RuleID: HS-JAVA-110
+Type: Vulnerability
+ReferenceHash: a66a578fd15494001660058abada920f5d7782b39f4478ae5a73495bcc140f6d
+Details: (1/1) * Possible vulnerability detected: Weak block mode for Cryptographic Hash Function
+A weak ECB, (a.k.a 'block mode') was found in one of your Ciphers. Always use a strong, high entropy hash, for example the SHA-512 with salt options. For more information check CWE-327 (https://cwe.mitre.org/data/definitions/327.html), CWE-719 (https://cwe.mitre.org/data/definitions/719.html), CWE-326 (https://cwe.mitre.org/data/definitions/326.html) and CWE-780 (https://cwe.mitre.org/data/definitions/780.html) for deeper details on how to fix it.
+
+==================================================================================
+
+Language: Java
+Severity: HIGH
+Line: 74
+Column: 28
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
+RuleID: HS-JAVA-110
+Type: Vulnerability
+ReferenceHash: c5d97ae652b1bf485e38bd9c5ee494bab479f89e8e9b606cb7058a3c41699e9d
+Details: (1/1) * Possible vulnerability detected: Weak block mode for Cryptographic Hash Function
+A weak ECB, (a.k.a 'block mode') was found in one of your Ciphers. Always use a strong, high entropy hash, for example the SHA-512 with salt options. For more information check CWE-327 (https://cwe.mitre.org/data/definitions/327.html), CWE-719 (https://cwe.mitre.org/data/definitions/719.html), CWE-326 (https://cwe.mitre.org/data/definitions/326.html) and CWE-780 (https://cwe.mitre.org/data/definitions/780.html) for deeper details on how to fix it.
+
+==================================================================================
+
+Language: Java
+Severity: HIGH
+Line: 64
+Column: 24
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
+RuleID: HS-JAVA-110
+Type: Vulnerability
+ReferenceHash: a66a578fd15494001660058abada920f5d7782b39f4478ae5a73495bcc140f6d
+Details: (1/1) * Possible vulnerability detected: Weak block mode for Cryptographic Hash Function
+A weak ECB, (a.k.a 'block mode') was found in one of your Ciphers. Always use a strong, high entropy hash, for example the SHA-512 with salt options. For more information check CWE-327 (https://cwe.mitre.org/data/definitions/327.html), CWE-719 (https://cwe.mitre.org/data/definitions/719.html), CWE-326 (https://cwe.mitre.org/data/definitions/326.html) and CWE-780 (https://cwe.mitre.org/data/definitions/780.html) for deeper details on how to fix it.
+
+==================================================================================
+
+Language: Java
+Severity: HIGH
+Line: 74
+Column: 28
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
+RuleID: HS-JAVA-110
+Type: Vulnerability
+ReferenceHash: c5d97ae652b1bf485e38bd9c5ee494bab479f89e8e9b606cb7058a3c41699e9d
+Details: (1/1) * Possible vulnerability detected: Weak block mode for Cryptographic Hash Function
+A weak ECB, (a.k.a 'block mode') was found in one of your Ciphers. Always use a strong, high entropy hash, for example the SHA-512 with salt options. For more information check CWE-327 (https://cwe.mitre.org/data/definitions/327.html), CWE-719 (https://cwe.mitre.org/data/definitions/719.html), CWE-326 (https://cwe.mitre.org/data/definitions/326.html) and CWE-780 (https://cwe.mitre.org/data/definitions/780.html) for deeper details on how to fix it.
+
+==================================================================================
+
+Language: Java
+Severity: HIGH
+Line: 10
+Column: 7
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: import javax.crypto.Cipher;
+RuleID: HS-JAVA-123
+Type: Vulnerability
+ReferenceHash: 977469853071f4d47a9e4c01cfc10cf35f53a3aeb1a844f99f92c178cc0f2bd8
+Details: (1/1) * Possible vulnerability detected:  Crypto import
+ Crypto import
+
+==================================================================================
+
+Language: Java
+Severity: HIGH
+Line: 11
+Column: 7
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: import javax.crypto.SecretKey;
+RuleID: HS-JAVA-123
+Type: Vulnerability
+ReferenceHash: 871802b5b867e0a5967c16fca33d6f13e0af550275899d3d5e76194a581cd0c3
+Details: (1/1) * Possible vulnerability detected:  Crypto import
+ Crypto import
+
+==================================================================================
+
+Language: Java
+Severity: HIGH
+Line: 12
+Column: 7
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: import javax.crypto.spec.IvParameterSpec;
+RuleID: HS-JAVA-123
+Type: Vulnerability
+ReferenceHash: 0041aa15f5c5bf6f30b31b7886633fcee60739c9b183a69503301f57dc8a2f4a
+Details: (1/1) * Possible vulnerability detected:  Crypto import
+ Crypto import
+
+==================================================================================
+
+Language: Java
+Severity: HIGH
+Line: 13
+Column: 7
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: import javax.crypto.spec.SecretKeySpec;
+RuleID: HS-JAVA-123
+Type: Vulnerability
+ReferenceHash: 3c0e636ce82ef5ae0c2be781a66b0a53ad18c69587512e8b548d8cc74d57e4c5
+Details: (1/1) * Possible vulnerability detected:  Crypto import
+ Crypto import
+
+==================================================================================
+
+Language: Java
+Severity: HIGH
+Line: 48
+Column: 47
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: hex.append(String.format("%02x", b & 0xFF));
+RuleID: HS-JAVA-143
+Type: Vulnerability
+ReferenceHash: 182c0496bb5a11bb319dd6030a83c368795891d22b27964efda428c3a5684cee
+Details: (1/1) * Possible vulnerability detected: Bad hexadecimal concatenation
+When converting a byte array containing a hash signature to a human readable string, a conversion mistake can be made if the array is read byte by byte. The following sample illustrates the use of the method Integer.toHexString() which will trim any leading zeroes from each byte of the computed hash value. For more information checkout the CWE-704 (https://cwe.mitre.org/data/definitions/704.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: HIGH
+Line: 321
+Column: 14
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: } catch (Exception e) {
+RuleID: HS-JAVA-63
+Type: Vulnerability
+ReferenceHash: f9de2feb7a331c2de8959037b9e912d49c5ab3a6c6bee40d1d39fe655f37edf2
+Details: (1/1) * Possible vulnerability detected: Information Exposure Through An Error Message
+The sensitive information may be valuable information on its own (such as a password), or it may be useful for launching other, more deadly attacks. For more information checkout the CWE-209 (https://cwe.mitre.org/data/definitions/209.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: MEDIUM
+Line: 58
+Column: 20
+SecurityTool: HorusecEngine
+Confidence: MEDIUM
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: byte[] IV = new byte[16];
+RuleID: HS-JAVA-78
+Type: Vulnerability
+ReferenceHash: eb5abb475a4dd5c00831cd8eb9040266bf831624128566c1f1af654a9552c50f
+Details: (1/1) * Possible vulnerability detected: Static IV
+Initialization vector must be regenerated for each message to be encrypted. For more information checkout the CWE-329 (https://cwe.mitre.org/data/definitions/329.html) advisory
+
+==================================================================================
+
+Language: Java
+Severity: MEDIUM
+Line: 3
+Column: 7
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: import android.util.Base64;
+RuleID: HS-JVM-38
+Type: Vulnerability
+ReferenceHash: 75bb3136a69cf3d7158864bc72782b175fcc7ffb9ca2a1ad3714d44770c0011c
+Details: (1/2) * Possible vulnerability detected: Base64 Encode
+Basic authentication's only means of obfuscation is Base64 encoding. Since Base64 encoding is easily recognized and reversed, it offers only the thinnest veil of protection to your users, and should not be used.
+         
+(2/2) * Possible vulnerability detected: Base64 Decode
+Base64 Decode
+
+==================================================================================
+
+Language: Java
+Severity: MEDIUM
+Line: 94
+Column: 21
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: oString(IV, Base64.NO_WRAP)+'$'+Base64.encodeToString(cipherText, Base64.NO_WRAP);
+RuleID: HS-JVM-38
+Type: Vulnerability
+ReferenceHash: 5de60c721ff68ce6dfbcb2d185db3a7bb2d6aa14a5a24c435ce69d610abf330e
+Details: (1/1) * Possible vulnerability detected: Base64 Encode
+Basic authentication's only means of obfuscation is Base64 encoding. Since Base64 encoding is easily recognized and reversed, it offers only the thinnest veil of protection to your users, and should not be used.
+
+==================================================================================
+
+Language: Java
+Severity: MEDIUM
+Line: 94
+Column: 67
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: oString(cipherText, Base64.NO_WRAP);
+RuleID: HS-JVM-38
+Type: Vulnerability
+ReferenceHash: b2d4353f8c859c8419a04d153ce7161c75ac6fa09e6ac809ae22212243ffab0e
+Details: (1/1) * Possible vulnerability detected: Base64 Encode
+Basic authentication's only means of obfuscation is Base64 encoding. Since Base64 encoding is easily recognized and reversed, it offers only the thinnest veil of protection to your users, and should not be used.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 104
+Column: 26
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: byte[] IV = Base64.decode(recMsgSplit[0], Base64.DEFAULT);
+RuleID: HS-JVM-24
+Type: Vulnerability
+ReferenceHash: c00dcb9cbbfe566d62cfa442382f7bc5f1eaf27e4da4ef62f806b72232e74f12
+Details: (1/1) * Possible vulnerability detected: Base64 Decode
+Base64 Decode
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 105
+Column: 34
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/EncryptData.java
+Code: byte[] cipherText = Base64.decode(recMsgSplit[1], Base64.DEFAULT);
+RuleID: HS-JVM-24
+Type: Vulnerability
+ReferenceHash: 1ed222a427c74b2f3dfe863d68ee92fd34d0fd11d25c616e590b263d20a5ff28
+Details: (1/1) * Possible vulnerability detected: Base64 Decode
+Base64 Decode
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 194
+Column: 19
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: btnDisconn.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: ae6e30f399679d7c7e409236ebf47697a3d9a560edaa19c8321e3f9920239cb3
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 195
+Column: 18
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: etMessage.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: d1d61a823391021388978dd30acda937a30b017934bbbfc68d5b79516c754eda
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 196
+Column: 16
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: btnSend.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: bdc3f476bf6604b15f8ef66cd44fe5db45e7d8b9b851a4fe08345f3ecc296ae3
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 197
+Column: 19
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: tvMessages.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: 14d14af12c1564de331bdce0c8f61cc2a5f297674b47c4122fbcbc2f86466b0f
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 207
+Column: 31
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: btnConnect.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: 4b932d331076682bbdda1a8b890020f1dd4abecfeaeabc9fe4430e0b91c9f02c
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 256
+Column: 17
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: etIP.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: e0d04a9278c920a3949ed7acf7209174602e74b2fa753d731fe2db2356b84f7a
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 257
+Column: 19
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: etPort.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: 6a0e6d912a18b4df363d257f04936cfd7c1a044805c7f2ef0e9286e10d196924
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 258
+Column: 21
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: userName.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: 6e0f4b9dd9c89e800d2f879e44728af92935aeab1d8fb7a9dede9e25c8403607
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 259
+Column: 27
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: encryptionPass.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: 982f2b2d5aa0b68cbaf82c3a6074d2bd07fabbd8c9c6c640598aa718a123c5fd
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 260
+Column: 23
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: btnConnect.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: 2827b4968b400a35503f454b4752136ca271810f60458418947aa205cfa819e4
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 261
+Column: 23
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: btnEditPin.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: 036e5465ae0223691f61196c21cb02336ac3977ace7501658eb905a43294bbeb
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 284
+Column: 19
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: btnDisconn.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: 9ef367202850ba018f5ab0be118d39415231376be1d7be5b8950ac8567625009
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 285
+Column: 19
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: tvMessages.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: d267eb539a8bb985328e8813c8b2196a90d3839a769dbc1b89bb87786c8c061e
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 286
+Column: 18
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: etMessage.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: 4537c9e210a2ab8dc324c1b12f01ea80c340097a6809c9048f3d09bd2b5659db
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+Language: Java
+Severity: LOW
+Line: 287
+Column: 16
+SecurityTool: HorusecEngine
+Confidence: LOW
+File: /home/patryk/Desktop/AppSecurity/InsecureCommunicationServerClient/app/src/main/java/com/example/insecurecommunicationserverclient/MainActivity.java
+Code: btnSend.setVisibility(View.GONE);
+RuleID: HS-JAVA-109
+Type: Vulnerability
+ReferenceHash: 9c1692c0d50736784c2154f1916acefc39faeee6119bddd162c9274e09861127
+Details: (1/1) * Possible vulnerability detected: Hidden elements
+Hidden elements in view can be used to hide data from user. But this data can be leaked. For more information checkout the CWE-919 (https://cwe.mitre.org/data/definitions/919.html) advisory.
+
+==================================================================================
+
+In this analysis, a total of 41 possible vulnerabilities were found and we classified them into:
+Total of Vulnerability MEDIUM is: 4
+Total of Vulnerability LOW is: 17
+Total of Vulnerability CRITICAL is: 8
+Total of Vulnerability HIGH is: 12
+
+==================================================================================
+
+
+WARN[0011] {HORUSEC_CLI} No authorization token was found, your code it is not going to be sent to horusec. Please enter a token with the -a flag to configure and save your analysis 
+
+WARN[0011] {HORUSEC_CLI} 41 VULNERABILITIES WERE FOUND IN YOUR CODE SENT TO HORUSEC, TO SEE MORE DETAILS USE THE LOG LEVEL AS DEBUG AND TRY AGAIN 
+
+WARN[0011] {HORUSEC_CLI} Horusec not show info vulnerabilities in this analysis, to see info vulnerabilities add option "--information-severity=true". For more details use (horusec start --help) command. 
+

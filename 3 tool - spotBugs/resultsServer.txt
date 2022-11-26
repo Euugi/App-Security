@@ -1,0 +1,35 @@
+patryk@Latitude:~/Desktop/AppSecurity/InsecureCommunicationServer$ sudo ./gradlew :app:spotbugsDebug
+
+> Task :app:spotbugsDebug
+M C NP: Possible null pointer dereference of digest in com.example.insecurecommunicationserver.EncryptData.getSha256HashInBytes(String) on exception path  Dereferenced at EncryptData.java:[line 38]
+L D PZLA: Should com.example.insecurecommunicationserver.EncryptData.getSha256HashInBytes(String) return a zero length array rather than null?  At EncryptData.java:[line 41]
+L P UPM: Private method com.example.insecurecommunicationserver.EncryptData.getSha256Hash(String) is never called  At EncryptData.java:[line 27]
+L D REC: Exception is caught when Exception is not thrown in com.example.insecurecommunicationserver.EncryptData.decrypt(byte[], byte[])  At EncryptData.java:[line 80]
+H I Dm: Found reliance on default encoding in com.example.insecurecommunicationserver.EncryptData.getSha256HashInBytes(String): String.getBytes()  At EncryptData.java:[line 39]
+H I Dm: Found reliance on default encoding in com.example.insecurecommunicationserver.EncryptData.decrypt(byte[], byte[]): new String(byte[])  At EncryptData.java:[line 79]
+M D ST: Write to static field com.example.insecurecommunicationserver.MainActivity.context from instance method com.example.insecurecommunicationserver.MainActivity.onCreate(Bundle)  At MainActivity.java:[line 56]
+M D ST: Write to static field com.example.insecurecommunicationserver.MainActivity.SERVER_IP from instance method com.example.insecurecommunicationserver.MainActivity.onCreate(Bundle)  At MainActivity.java:[line 71]
+L B Nm: The field name com.example.insecurecommunicationserver.MainActivity.Thread1 doesn't start with a lower case letter  In MainActivity.java
+L D BC: Unchecked/unconfirmed cast from java.net.ServerSocket to javax.net.ssl.SSLServerSocket of return value in com.example.insecurecommunicationserver.TLSServer.serve(int, String, String, char[], String, char[])  At TLSServer.java:[line 67]
+H I Dm: Found reliance on default encoding in com.example.insecurecommunicationserver.MainActivity$Thread1.run(): new java.io.PrintWriter(OutputStream, boolean)  At MainActivity.java:[line 124]
+H I Dm: Found reliance on default encoding in com.example.insecurecommunicationserver.MainActivity$Thread1.run(): new java.io.InputStreamReader(InputStream)  At MainActivity.java:[line 125]
+M V MS: com.example.insecurecommunicationserver.MainActivity.SERVER_IP should be package protected  At MainActivity.java:[line 33]
+The following classes needed for analysis were missing:
+  android.view.View$OnClickListener
+  android.app.Activity
+  android.view.ViewGroup
+  android.widget.TextView
+  android.widget.EditText
+  android.content.Context
+  android.content.res.AssetManager
+  android.util.Base64
+  android.widget.Button
+  android.app.Application
+  android.net.wifi.WifiManager
+  android.net.wifi.WifiInfo
+  android.text.Editable
+SpotBugs ended with exit code 3
+
+BUILD SUCCESSFUL in 13s
+16 actionable tasks: 1 executed, 15 up-to-date
+
